@@ -24,6 +24,15 @@ NutriScan Kids es una aplicación web desarrollada en Django que permite realiza
 
 ---
 
+## 👥 Equipo de Desarrollo
+
+Este proyecto ha sido desarrollado por:
+
+- **Hernan Sarango** - *Desarrollador Full-Stack*
+- **Ayrton Oña** - *Desarrollador Full-Stack*
+
+---
+
 ## 🚀 Instalación
 
 ### Prerrequisitos
@@ -277,14 +286,20 @@ Para soporte técnico o consultas:
 - **Documentación**: [Wiki del proyecto](https://github.com/tu-usuario/nutriscan-kids/wiki)
 - **Issues**: [Reportar problemas](https://github.com/tu-usuario/nutriscan-kids/issues)
 
+### Contacto del Equipo de Desarrollo
+
+- **Hernan Sarango** - [GitHub](https://github.com/hernan-sarango) | [Email](mailto:hernan.sarango@email.com)
+- **Ayrton Oña** - [GitHub](https://github.com/ayrton-ona) | [Email](mailto:ayrton.ona@email.com)
+
 ---
 
 ## 🙏 Agradecimientos
 
+- **Hernan Sarango** y **Ayrton Oña** - Desarrolladores principales del proyecto
 - Equipo de desarrollo de Django
 - Comunidad de desarrolladores Python
 - Especialistas en nutrición infantil que colaboraron en el proyecto
 
 ---
 
-**Desarrollado con ❤️ para el bienestar nutricional infantil**
+**Desarrollado con ❤️ por Hernan Sarango y Ayrton Oña para el bienestar nutricional infantil**
