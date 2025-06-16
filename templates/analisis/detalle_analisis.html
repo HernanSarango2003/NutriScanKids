@@ -165,17 +165,27 @@
     <div class="relative z-10 flex justify-end space-x-4 mt-6 pt-6 border-t border-gray-200">
       {% if puede_editar %}
         <a href="{% url 'analisis:editar' analisis.id %}" 
-           class="px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+          class="px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105">
           <i class="fas fa-edit mr-2"></i>Editar Análisis
         </a>
       {% endif %}
+      
+      <!-- Botón para enviar por email -->
+      <a href="{% url 'analisis:enviar_email' analisis.id %}" 
+        class="px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:from-green-600 hover:to-emerald-700">
+        <i class="fas fa-envelope mr-2"></i>Enviar por Email
+      </a>
+
+      <a href="{% url 'analisis:descargar_pdf' analisis.id %}" 
+        class="px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:from-red-600 hover:to-red-700">
+        <i class="fas fa-file-pdf mr-2"></i>Descargar PDF
+      </a>
       
       <button onclick="imprimirAnalisis()" 
               class="px-6 py-3 bg-gradient-to-r from-secondary to-gray-600 text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105">
         <i class="fas fa-print mr-2"></i>Imprimir
       </button>
     </div>
-  </div>
 
   <!-- Recomendaciones -->
   {% if analisis.recomendaciones_nutricionales %}

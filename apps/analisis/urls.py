@@ -2,7 +2,7 @@
 URLs para el módulo de análisis nutricional
 """
 from django.urls import path
-from apps.analisis.views.analisis import dashboard_estadisticas, enviar_analisis_email, enviar_multiple_analisis_email, lista_analisis, nuevo_analisis, detalle_analisis, editar_analisis, eliminar_analisis, procesar_imagen_ajax, exportar_reporte
+from apps.analisis.views.analisis import dashboard_estadisticas, descargar_pdf_reporte, enviar_reporte_email, lista_analisis, nuevo_analisis, detalle_analisis, editar_analisis, eliminar_analisis, procesar_imagen_ajax, exportar_reporte
 
 app_name = 'analisis'
 
@@ -24,6 +24,7 @@ urlpatterns = [
     # Reportes y exportación
     path('exportar/csv/', exportar_reporte, name='exportar_csv'),
     
-    path('enviar-email/<int:analisis_id>/', enviar_analisis_email, name='enviar_email'),
-    path('enviar-multiple-email/', enviar_multiple_analisis_email, name='enviar_multiple_email'),
+    path('enviar-email/<uuid:analisis_id>/', enviar_reporte_email, name='enviar_email'),
+    
+    path('descargar-pdf/<uuid:analisis_id>/', descargar_pdf_reporte, name='descargar_pdf'),
 ]
